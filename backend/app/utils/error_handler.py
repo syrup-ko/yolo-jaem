@@ -1,0 +1,8 @@
+from fastapi import HTTPException
+
+
+def not_found(detail: str = "Not Found") -> HTTPException:
+    return HTTPException(status_code=404, detail=detail)
+
+
+
